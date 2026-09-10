@@ -1,0 +1,305 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"name\":\"makeline-service\",\"namespace\":\"pets\"},\"spec\":{\"ports\":[{\"name\":\"http\",\"port\":3001,\"targetPort\":3001}],\"selector\":{\"app\":\"makeline-service\"},\"type\":\"ClusterIP\"}}\n"
+                },
+                "creationTimestamp": "2024-12-17T12:18:33Z",
+                "name": "makeline-service",
+                "namespace": "pets",
+                "resourceVersion": "536613",
+                "uid": "79a4d8e3-98ce-4df0-9bd0-4f6a7530d049"
+            },
+            "spec": {
+                "clusterIP": "10.101.196.105",
+                "clusterIPs": [
+                    "10.101.196.105"
+                ],
+                "internalTrafficPolicy": "Cluster",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "ports": [
+                    {
+                        "name": "http",
+                        "port": 3001,
+                        "protocol": "TCP",
+                        "targetPort": 3001
+                    }
+                ],
+                "selector": {
+                    "app": "makeline-service"
+                },
+                "sessionAffinity": "None",
+                "type": "ClusterIP"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"name\":\"mongodb\",\"namespace\":\"pets\"},\"spec\":{\"ports\":[{\"port\":27017}],\"selector\":{\"app\":\"mongodb\"},\"type\":\"ClusterIP\"}}\n"
+                },
+                "creationTimestamp": "2024-12-17T12:18:33Z",
+                "name": "mongodb",
+                "namespace": "pets",
+                "resourceVersion": "536564",
+                "uid": "a30ca735-d02a-42ef-8114-6101ceff994d"
+            },
+            "spec": {
+                "clusterIP": "10.107.180.113",
+                "clusterIPs": [
+                    "10.107.180.113"
+                ],
+                "internalTrafficPolicy": "Cluster",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "ports": [
+                    {
+                        "port": 27017,
+                        "protocol": "TCP",
+                        "targetPort": 27017
+                    }
+                ],
+                "selector": {
+                    "app": "mongodb"
+                },
+                "sessionAffinity": "None",
+                "type": "ClusterIP"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"name\":\"order-service\",\"namespace\":\"pets\"},\"spec\":{\"ports\":[{\"name\":\"http\",\"port\":3000,\"targetPort\":3000}],\"selector\":{\"app\":\"order-service\"},\"type\":\"ClusterIP\"}}\n"
+                },
+                "creationTimestamp": "2024-12-17T12:18:33Z",
+                "name": "order-service",
+                "namespace": "pets",
+                "resourceVersion": "536597",
+                "uid": "3ad6d384-5ef8-4541-9d05-d4c70c5daa0e"
+            },
+            "spec": {
+                "clusterIP": "10.103.219.208",
+                "clusterIPs": [
+                    "10.103.219.208"
+                ],
+                "internalTrafficPolicy": "Cluster",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "ports": [
+                    {
+                        "name": "http",
+                        "port": 3000,
+                        "protocol": "TCP",
+                        "targetPort": 3000
+                    }
+                ],
+                "selector": {
+                    "app": "order-service"
+                },
+                "sessionAffinity": "None",
+                "type": "ClusterIP"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"name\":\"product-service\",\"namespace\":\"pets\"},\"spec\":{\"ports\":[{\"name\":\"http\",\"port\":3002,\"targetPort\":3002}],\"selector\":{\"app\":\"product-service\"},\"type\":\"ClusterIP\"}}\n"
+                },
+                "creationTimestamp": "2024-12-17T12:18:33Z",
+                "name": "product-service",
+                "namespace": "pets",
+                "resourceVersion": "536632",
+                "uid": "5ff8d307-5ab3-433c-9541-a536902b5013"
+            },
+            "spec": {
+                "clusterIP": "10.105.68.46",
+                "clusterIPs": [
+                    "10.105.68.46"
+                ],
+                "internalTrafficPolicy": "Cluster",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "ports": [
+                    {
+                        "name": "http",
+                        "port": 3002,
+                        "protocol": "TCP",
+                        "targetPort": 3002
+                    }
+                ],
+                "selector": {
+                    "app": "product-service"
+                },
+                "sessionAffinity": "None",
+                "type": "ClusterIP"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"name\":\"rabbitmq\",\"namespace\":\"pets\"},\"spec\":{\"ports\":[{\"name\":\"rabbitmq-amqp\",\"port\":5672,\"targetPort\":5672},{\"name\":\"rabbitmq-http\",\"port\":15672,\"targetPort\":15672}],\"selector\":{\"app\":\"rabbitmq\"},\"type\":\"ClusterIP\"}}\n"
+                },
+                "creationTimestamp": "2024-12-17T12:18:33Z",
+                "name": "rabbitmq",
+                "namespace": "pets",
+                "resourceVersion": "536581",
+                "uid": "1874508e-b389-47cf-87a3-90840f686fe5"
+            },
+            "spec": {
+                "clusterIP": "10.101.246.146",
+                "clusterIPs": [
+                    "10.101.246.146"
+                ],
+                "internalTrafficPolicy": "Cluster",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "ports": [
+                    {
+                        "name": "rabbitmq-amqp",
+                        "port": 5672,
+                        "protocol": "TCP",
+                        "targetPort": 5672
+                    },
+                    {
+                        "name": "rabbitmq-http",
+                        "port": 15672,
+                        "protocol": "TCP",
+                        "targetPort": 15672
+                    }
+                ],
+                "selector": {
+                    "app": "rabbitmq"
+                },
+                "sessionAffinity": "None",
+                "type": "ClusterIP"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"name\":\"store-admin\",\"namespace\":\"pets\"},\"spec\":{\"ports\":[{\"port\":80,\"targetPort\":8081}],\"selector\":{\"app\":\"store-admin\"},\"type\":\"LoadBalancer\"}}\n"
+                },
+                "creationTimestamp": "2024-12-17T12:18:33Z",
+                "name": "store-admin",
+                "namespace": "pets",
+                "resourceVersion": "536673",
+                "uid": "ac538ad9-d7e2-4900-9147-77e5fd2b75be"
+            },
+            "spec": {
+                "allocateLoadBalancerNodePorts": true,
+                "clusterIP": "10.99.4.41",
+                "clusterIPs": [
+                    "10.99.4.41"
+                ],
+                "externalTrafficPolicy": "Cluster",
+                "internalTrafficPolicy": "Cluster",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "ports": [
+                    {
+                        "nodePort": 31750,
+                        "port": 80,
+                        "protocol": "TCP",
+                        "targetPort": 8081
+                    }
+                ],
+                "selector": {
+                    "app": "store-admin"
+                },
+                "sessionAffinity": "None",
+                "type": "LoadBalancer"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        },
+        {
+            "apiVersion": "v1",
+            "kind": "Service",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"name\":\"store-front\",\"namespace\":\"pets\"},\"spec\":{\"ports\":[{\"port\":80,\"targetPort\":8080}],\"selector\":{\"app\":\"store-front\"},\"type\":\"LoadBalancer\"}}\n"
+                },
+                "creationTimestamp": "2024-12-17T12:18:33Z",
+                "name": "store-front",
+                "namespace": "pets",
+                "resourceVersion": "536651",
+                "uid": "65610567-6ef2-4e0f-9079-83b80aed2cbf"
+            },
+            "spec": {
+                "allocateLoadBalancerNodePorts": true,
+                "clusterIP": "10.96.144.146",
+                "clusterIPs": [
+                    "10.96.144.146"
+                ],
+                "externalTrafficPolicy": "Cluster",
+                "internalTrafficPolicy": "Cluster",
+                "ipFamilies": [
+                    "IPv4"
+                ],
+                "ipFamilyPolicy": "SingleStack",
+                "ports": [
+                    {
+                        "nodePort": 32713,
+                        "port": 80,
+                        "protocol": "TCP",
+                        "targetPort": 8080
+                    }
+                ],
+                "selector": {
+                    "app": "store-front"
+                },
+                "sessionAffinity": "None",
+                "type": "LoadBalancer"
+            },
+            "status": {
+                "loadBalancer": {}
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": ""
+    }
+}

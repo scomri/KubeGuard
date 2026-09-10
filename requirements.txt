@@ -1,0 +1,5 @@
+openai>=1.70,<2
+python-dotenv>=1,<2
+PyYAML>=6,<7
+pandas>=2,<3
+numpy>=2,<3
